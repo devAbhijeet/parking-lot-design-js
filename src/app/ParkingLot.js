@@ -3,7 +3,6 @@ class ParkingLot {
   maxLimit = 10;
 
   spaceReducer() {
-    console.log("Calling parkingSpaceReducer ", this.parkingSpace);
     return this.parkingSpace.reduce(function(acc, entry) {
       return entry.spotsNeeded + acc;
     }, 0);

@@ -46,8 +46,6 @@ class ParkingLot {
   }
 
   getAvaliableSlots() {
-    console.log("this.maxLimit ", this.maxLimit);
-    console.log("this.spaceReducer() ", this.spaceReducer());
     return this.maxLimit - this.spaceReducer();
   }
 }
